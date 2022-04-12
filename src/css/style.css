@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  position: fixed;
+  z-index: 3;
+}
+header .logo {
+  width: 20%;
+}
+header nav {
+  width: 80%;
+  display: flex;
+  align-self: center;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-self: center;
+  width: 100%;
+  align-content: center;
+}
+header nav ul li {
+  width: 15%;
+  text-align: center;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: aliceblue;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+header nav ul li a:hover {
+  background-color: #3c3a3a;
+  transition: 1s 0s ease-in-out;
+  box-shadow: 1px 1px 20px 0 #FFFFFF;
+  border: hidden #161515 1px;
+  transform: scale(1.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  background-color: #000;
+  margin: 0px auto;
+  height: 100%;
+}
+main .section1 {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+}
+main .section1 video {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main .section1 video .video {
+  width: 100%;
+}
+main .section2 {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2784313725);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+  margin-top: 20px;
+}
+main .section2 .titulo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: -10px;
+  height: 80px;
+  width: 100%;
+}
+main .section2 .titulo h2 {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Grape Nuts", cursive;
+  background-color: rgba(42, 42, 42, 0.4941176471);
+}
+main .section2 .sobreMi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+main .section2 .sobreMi .miFoto {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+main .section2 .sobreMi .miFoto img {
+  width: 50%;
+  height: 100%;
+  border-radius: 30px 0px 100px 0px;
+}
+main .section2 .sobreMi .miDescripcion {
+  padding: 15px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+main .section3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: center;
+  background-image: url(../img/fondo.png);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .section3 .titulo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: -10px;
+  height: 80px;
+  width: 100%;
+}
+main .section3 .titulo h2 {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Grape Nuts", cursive;
+  background-color: rgba(5, 5, 5, 0.4941176471);
+}
+main .section3 .misProyectos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+main .section3 .misProyectos .card {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 5px;
+}
+main .section3 .misProyectos .card img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 0 #858585;
+}
+main .section3 .misProyectos .card h4 {
+  margin-top: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+main .section3 .misProyectos .card a {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fffafa;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  background: #3D94F6;
+  background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+  box-shadow: 1px 1px 20px 0 #5f5d5d;
+  text-shadow: 1px 1px 20px #000000;
+}
+main .section3 .misProyectos .card a span {
+  color: #fa0606;
+}
+main .section3 .misProyectos .card a:hover {
+  background-color: rgba(0, 0, 0, 0.0941176471);
+  color: #0c0b0b;
+}
+main .section3 .misProyectos .card a:hover span {
+  color: #dd820c;
+}
+main .section4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  background-color: #000000;
+  padding-bottom: 25px;
+}
+main .section4 .titulo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 60px;
+  height: 80px;
+  width: 100%;
+}
+main .section4 .titulo h2 {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Grape Nuts", cursive;
+  background-color: rgba(5, 5, 5, 0.4941176471);
+}
+main .section4 .misCertificados {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+main .section4 .misCertificados .card {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #3d3c3c;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 5px;
+}
+main .section4 .misCertificados .card img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 0 #858585;
+}
+main .section4 .misCertificados .card h4 {
+  margin-top: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fffafa;
+}
+main .section4 .misCertificados .card a {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fffafa;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  background: #050505;
+  background-image: -webkit-linear-gradient(top, #000000, #222324);
+  box-shadow: 1px 1px 20px 0 #5f5d5d;
+  text-shadow: 1px 1px 20px #000000;
+}
+main .section4 .misCertificados .card a span {
+  color: #fa0606;
+}
+main .section4 .misCertificados .card a:hover {
+  background-color: rgba(0, 0, 0, 0.0941176471);
+  color: #fdfdfd;
+}
+main .section4 .misCertificados .card a:hover span {
+  color: #dd820c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section5 {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: center;
+  background-image: url(../img/fondo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section5 .titulo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 50px;
+  height: 80px;
+  width: 100%;
+}
+.section5 .titulo h2 {
+  margin-top: 50px;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Grape Nuts", cursive;
+  background-color: rgba(5, 5, 5, 0.4941176471);
+}
+.section5 form {
+  margin: 50px auto;
+  width: 50%;
+  padding: 15px;
+  color: #f9f0f0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  box-shadow: 2px 5px 10px 5px gray;
+  background-color: rgba(17, 16, 16, 0.8784313725);
+  border-radius: 5px 30px 5px 30px;
+  font-family: "Grape Nuts", cursive;
+}
+.section5 form .inputs-texts {
+  margin: 15px auto;
+  width: 40%;
+  font-size: 15px;
+  font-weight: bold;
+}
+.section5 form .inputs-texts input {
+  width: 100%;
+  height: 30px;
+}
+.section5 form .comentario {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 90%;
+  font-size: 15px;
+  font-weight: bold;
+}
+.section5 form .comentario textarea {
+  height: 200px;
+  width: 100%;
+}
+.section5 form .button {
+  margin: 5px auto;
+  display: flex;
+}
+.section5 form .button button {
+  background-color: #edde9c;
+  border: hidden;
+  text-align: center;
+  font-size: 15px;
+  color: #444444;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.section5 form .button button:hover {
+  background-color: black;
+  border: hidden;
+  cursor: pointer;
+  color: white;
+  text-shadow: none;
+}
+.section5 form .contenedor-load {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.section5 form .contenedor-load .lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.section5 form .contenedor-load .lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.section5 form .contenedor-load .lds-ripple div div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */

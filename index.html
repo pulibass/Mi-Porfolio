@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="/src/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Eduardo Ahumada</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/src/img/logo-png.png" alt="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#sobreMi">Sobre mi</a></li>
+          <li><a href="#misProyectos">Mis proyectos</a></li>
+          <li><a href="#certificados">Certificados</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="section1">
+                <video onloadedmetadata="this.muted=true" autoplay loop>
+                  <source class="video" src="./src/img/code-video.mp4" type="">
+                </video>
+        </section>
+
+        <div id="sobreMi"></div>
+        <section class="section2" >
+          <div class="titulo">
+          <h2  data-aos="fade-up"> <span> < </span> Sobre Mi <span> /> </span> </h2>
+          </div>
+          <div class="sobreMi">
+            <div class="miFoto">
+              <img src="/src/img/proyectos/mi-foto.jpg" alt="Eduardo Ahumada">
+            </div>
+            <div class="miDescripcion">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate ratione vel molestias maxime. Repudiandae cumque necessitatibus quasi aliquam soluta, sequi optio eos voluptatem in dolorem numquam adipisci minus nulla!
+              Quo rem culpa, facilis minus harum consequuntur obcaecati? Ullam maiores dicta incidunt, voluptas labore placeat natus explicabo officia hic rem animi dolores veniam, exercitationem temporibus aspernatur, voluptates repellat fugit vitae.
+              Accusamus voluptatum reprehenderit consequuntur iure labore totam. Tempore nihil eius repellendus minus et doloremque itaque odit quam maiores culpa id cumque provident, ut consectetur, eveniet sapiente obcaecati nam excepturi fugit.
+              Dolorem earum placeat quam et. Hic culpa iusto quidem quibusdam, in qui molestias doloremque. Eius tempore at esse corporis cum ex sequi ipsa sunt ipsam doloremque dolorum, harum alias numquam.</p>
+            </div>
+          </div>
+        </section>
+        <div id="misProyectos"></div>
+        <section class="section3" >
+          <div class="titulo">
+          <h2  data-aos="fade-up"> <span> < </span> Mis Proyectos <span> /> </span> </h2>
+          </div>
+          <div class="misProyectos">
+              <div data-aos="zoom-out" class="card">
+                <img src="/src/img/proyectos/proyecto-2.png" alt="">
+                <h4>PODCAST</h4>
+                <a href="https://pulibass.github.io/Podcast-Eduardo-Ahumada/" target="_blank"> <span> < </span>Proyecto Acamica<span> /> </span></a>
+              </div>
+              <div data-aos="zoom-out" class="card">
+                <img src="/src/img/proyectos/proyecto-6.png" alt="">
+                <h4>GIFOS</h4>
+                <a href="https://pulibass.github.io/gifos-actualizado/" target="_blank"> <span> < </span>Proyecto Acamica<span> /> </span></a>
+              </div>
+              <div data-aos="zoom-out" class="card">
+                <img src="/src/img/proyectos/proyecto-8.png" alt="">
+                <h4>NEUMATICOS PULIBASS</h4>
+                <a href="https://pulibass.github.io/proyecto-coderhouse/" target="_blank"> <span> < </span>Proyecto CoderHouse<span> /> </span></a>
+              </div>
+           
+          </div>
+        </section>
+
+        <div  id="certificados"></div>
+        <section class="section4">
+            <div class="titulo">
+          <h2  data-aos="fade-up"> <span> < </span> Mis Certificados <span> /> </span> </h2>
+          </div>
+            <div class="misCertificados">
+              <div data-aos="flip-left" class="card">
+                <img src="/src/img/desarrollo-web.png" alt="Certificado desarrollo Web">
+                <h4>Desarrollo Web</h4>
+                <a href="https://www.coderhouse.com/certificados/61b9e8f94bc6ea0ff0c57c9e" target="_blank"> <span> < </span>Certificado desarrollo Web<span> /> </span></a>
+              </div>
+              <div data-aos="flip-right" class="card">
+                <img src="/src/img/java-script.png" alt="Certificado Java Script">
+                <h4>Java Script</h4>
+                <a href="https://www.coderhouse.com/certificados/625441eae691e20020493438" target="_blank"> <span> < </span>Certificado Java Script<span> /> </span></a>
+              </div>
+              <!-- <div class="card">
+                <img src="/src/img/proyectos/proyecto-8.png" alt="">
+                <h4>NEUMATICOS PULIBASS</h4>
+                <a href="https://pulibass.github.io/proyecto-coderhouse/" target="_blank"> <span> < </span>Proyecto CoderHouse<span> /> </span></a>
+              </div> -->
+          </div>
+        </section>
+
+        <div id="contacto"></div>
+        <section class="section5" id="contacto">
+          <div class="titulo">
+          <h2  data-aos="fade-up"> <span> < </span> Contactame <span> /> </span> </h2>
+          </div>
+                    <form onsubmit="cargar(event)" data-aos="zoom-in" id="formularioContact">
+                        <div class="inputs-texts">
+                            <div>
+                                <label for="nombre">Nombre</label>
+                            </div>
+                            <input type="text" id="nombre" name="nombre" required placeholder="ingrese nombre">
+                        </div>
+
+                        <div class="inputs-texts">
+                            <div>
+                                <label for="apellido">Apellido</label>
+                            </div>
+                            <input type="text" id="apellido" name="apellido" required placeholder="ingrese apellido">
+                        </div>
+
+                        <div class="inputs-texts">
+                            <div>
+                                <label for="email">Email</label>
+                            </div>
+                            <input type="email" id="email" name="email" required placeholder="mail@mail.com">
+                        </div>
+
+                        <div class="inputs-texts">
+                            <div>
+                                <label for="telefono">Telefono</label>
+                            </div>
+                            <input type="text" id="telefono" name="telefono" required placeholder="ej: 351 2222222">
+                        </div>
+
+                        <div class="comentario">
+                            <label for="comentario">Dejame tu consulta</label>
+                            <textarea name="comentario" id="comentario" placeholder="Escriba aqui su comentario"
+                                cols="30" rows="10" style="resize: none;" required> </textarea>
+                        </div>
+
+                       
+
+                        <div class="button">
+                            <button id="reset" type="reset">Limpiar Formulario</button>
+                            <button type="" id="btnSubmit" value="enviar">Enviar</button>
+                        </div>
+
+                        <div class="contenedor-load" id="load">
+                            <div class="lds-ripple">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <!--FIN FORMULARIO CONTACTO-->
+
+                    </form>
+        </section>
+    </main>
+    <!-- <footer></footer> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("kdM1n1KInQEz-W1na");
+        })();
+    </script>
+     <script src="/src/js/contacto.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        })
+    </script>
+    <script src="/src/js/app.js"></script>
+  </body>
+</html>
