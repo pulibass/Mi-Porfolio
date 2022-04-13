@@ -10,5 +10,26 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #958989;
+    scroll-behavior: smooth;
+}
+
+.section1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    margin: auto;
+
+    video {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .video {
+            width: 100%;
+        }
+
+    }
 }

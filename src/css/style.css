@@ -12,6 +12,7 @@ header {
   padding: 5px;
   position: fixed;
   z-index: 3;
+  margin: auto;
 }
 header .logo {
   width: 20%;
@@ -66,23 +67,9 @@ main {
   margin: 0px auto;
   height: 100%;
 }
-main .section1 {
-  width: 100%;
-  height: 750px;
-  display: flex;
-  justify-content: center;
-}
-main .section1 video {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-main .section1 video .video {
-  width: 100%;
-}
 main .section2 {
   width: 100%;
-  height: 100vh;
+  height: auto;
   color: white;
   background-color: rgba(0, 0, 0, 0.2784313725);
   display: flex;
@@ -90,7 +77,7 @@ main .section2 {
   justify-content: center;
   align-content: center;
   padding: 5px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 main .section2 .titulo {
   display: flex;
@@ -123,7 +110,7 @@ main .section2 .sobreMi .miFoto {
   justify-content: center;
 }
 main .section2 .sobreMi .miFoto img {
-  width: 50%;
+  width: 80%;
   height: 100%;
   border-radius: 30px 0px 100px 0px;
 }
@@ -134,9 +121,12 @@ main .section2 .sobreMi .miDescripcion {
   justify-content: center;
   align-self: center;
 }
+main .section2 .sobreMi .miDescripcion p {
+  width: 100%;
+}
 main .section3 {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -164,11 +154,14 @@ main .section3 .titulo h2 {
 }
 main .section3 .misProyectos {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 30px;
+  margin-top: 130px;
+  margin-bottom: 150px;
 }
 main .section3 .misProyectos .card {
   width: 30%;
@@ -218,7 +211,7 @@ main .section3 .misProyectos .card a:hover span {
 }
 main .section4 {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -240,7 +233,7 @@ main .section4 .titulo h2 {
   text-align: center;
   color: white;
   font-family: "Grape Nuts", cursive;
-  background-color: rgba(5, 5, 5, 0.4941176471);
+  background-color: rgba(42, 42, 42, 0.4941176471);
 }
 main .section4 .misCertificados {
   width: 100%;
@@ -298,6 +291,293 @@ main .section4 .misCertificados .card a:hover span {
   color: #dd820c;
 }
 
+@media screen and (max-width: 768px) {
+  main .section2 {
+    height: 100%;
+  }
+  main .section2 .sobreMi {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px auto;
+  }
+  main .section2 .sobreMi .miFoto {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  main .section2 .sobreMi .miFoto img {
+    width: 50%;
+    height: 100%;
+    border-radius: 30px 0px 100px 0px;
+  }
+  main .section2 .sobreMi .miDescripcion {
+    padding: 15px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  main .section2 .sobreMi .miDescripcion p {
+    width: 100%;
+  }
+  main .section3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-image: url(../img/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 350%;
+    background-color: red;
+    margin-top: 50px;
+  }
+  main .section3 .titulo {
+    margin-top: 20px;
+  }
+  main .section3 .misProyectos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  main .section3 .misProyectos .card {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px;
+  }
+  main .section3 .misProyectos .card img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 0 #858585;
+  }
+  main .section3 .misProyectos .card h4 {
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  main .section3 .misProyectos .card a {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fffafa;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    background: #3D94F6;
+    background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+    box-shadow: 1px 1px 20px 0 #5f5d5d;
+    text-shadow: 1px 1px 20px #000000;
+  }
+  main .section3 .misProyectos .card a span {
+    color: #fa0606;
+  }
+  main .section3 .misProyectos .card a:hover {
+    background-color: rgba(0, 0, 0, 0.0941176471);
+    color: #0c0b0b;
+  }
+  main .section3 .misProyectos .card a:hover span {
+    color: #dd820c;
+  }
+  main .section4 {
+    width: 100%;
+    height: auto;
+  }
+  main .section4 .titulo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 60px;
+    height: 80px;
+    width: 100%;
+  }
+  main .section4 .titulo h2 {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: "Grape Nuts", cursive;
+    background-color: rgba(42, 42, 42, 0.4941176471);
+  }
+  main .section4 .misCertificados {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 15px;
+  }
+  main .section4 .misCertificados .card {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3d3c3c;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 5px;
+  }
+  main .section5 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-image: url(../img/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    margin-top: 50px;
+  }
+  main .section5 .titulo {
+    margin-top: 0px;
+  }
+  main .section5 form {
+    margin: 50px auto;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .section2 {
+    height: 100%;
+  }
+  main .section2 .sobreMi {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    background-color: green;
+  }
+  main .section2 .sobreMi .miFoto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+  }
+  main .section2 .sobreMi .miFoto img {
+    width: 50%;
+    height: 50%;
+    border-radius: 30px 0px 100px 0px;
+  }
+  main .section2 .sobreMi .miDescripcion {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  main .section2 .sobreMi .miDescripcion p {
+    background-color: red;
+    width: 100%;
+  }
+  main .section3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-image: url(../img/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 450%;
+    background-color: rgb(7, 25, 193);
+    margin-top: 50px;
+  }
+  main .section3 .titulo {
+    margin-top: 20px;
+  }
+  main .section3 .misProyectos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  main .section3 .misProyectos .card {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px;
+  }
+  main .section4 {
+    width: 100%;
+    height: auto;
+  }
+  main .section4 .misCertificados {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 15px;
+  }
+  main .section4 .misCertificados .card {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3d3c3c;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px;
+  }
+  main .section5 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-image: url(../img/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    margin-top: 50px;
+  }
+  main .section5 .titulo {
+    margin-top: 0px;
+  }
+  main .section5 form {
+    margin: 50px auto;
+    width: 80%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -306,7 +586,7 @@ main .section4 .misCertificados .card a:hover span {
 
 .section5 {
   width: 100%;
-  height: 100vh;
+  height: auto;
   flex-direction: column;
   align-self: flex-start;
   justify-content: center;
@@ -434,6 +714,53 @@ main .section4 .misCertificados .card a:hover span {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .section5 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-image: url(../img/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 322%;
+    margin-top: 50px;
+  }
+  .section5 .titulo {
+    margin-top: 0px;
+  }
+  .section5 form {
+    margin: 50px auto;
+    width: 90%;
+  }
+  .section5 form .button {
+    margin: 5px auto;
+    display: flex;
+  }
+  .section5 form .button button {
+    background-color: #edde9c;
+    border: hidden;
+    text-align: center;
+    font-size: 12px;
+    color: #444444;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 50%;
+  }
+  .section5 form .button button:hover {
+    background-color: black;
+    border: hidden;
+    cursor: pointer;
+    color: white;
+    text-shadow: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -447,7 +774,25 @@ main .section4 .misCertificados .card a:hover span {
 }
 
 body {
-  background-color: #000000;
+  background-color: #958989;
+  scroll-behavior: smooth;
+}
+
+.section1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  margin: auto;
+}
+.section1 video {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.section1 video .video {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

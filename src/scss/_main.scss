@@ -11,28 +11,9 @@ main {
     margin: 0px auto;
     height: 100%;
 
-
-    .section1 {
-        width: 100%;
-        height: 750px;
-        display: flex;
-        justify-content: center;
-
-        video {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-
-            .video {
-                width: 100%;
-            }
-
-        }
-    }
-
     .section2 {
         width: 100%;
-        height: 100vh;
+        height: auto;
         color: #ffff;
         background-color: #00000047;
         display: flex;
@@ -40,7 +21,7 @@ main {
         justify-content: center;
         align-content: center;
         padding: 5px;
-        margin-top: 20px;
+        margin-top: 0px;
 
         .titulo {
             display: flex;
@@ -75,7 +56,7 @@ main {
                 justify-content: center;
 
                 img {
-                    width: 50%;
+                    width: 80%;
                     height: 100%;
                     border-radius: 30px 0px 100px 0px;
                 }
@@ -87,6 +68,10 @@ main {
                 display: flex;
                 justify-content: center;
                 align-self: center;
+
+                p {
+                    width: 100%;
+                }
             }
         }
 
@@ -94,7 +79,7 @@ main {
 
     .section3 {
         width: 100%;
-        height: 100vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-self: flex-start;
@@ -124,11 +109,14 @@ main {
 
         .misProyectos {
             width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-direction: row;
             flex-wrap: nowrap;
-            margin-top: 30px;
+            margin-top: 130px;
+            margin-bottom: 150px;
 
             .card {
                 width: 30%;
@@ -189,7 +177,7 @@ main {
 
     .section4 {
         width: 100%;
-        height: 100vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -212,7 +200,7 @@ main {
                 text-align: center;
                 color: white;
                 font-family: 'Grape Nuts', cursive;
-                background-color: #0505057e;
+                background-color: #2a2a2a7e;
             }
         }
 
@@ -283,4 +271,345 @@ main {
     }
 
 
+}
+
+@media screen and (max-width:768px) {
+
+    main {
+        .section2 {
+            height: 100%;
+
+            .sobreMi {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin: 30px auto;
+
+                .miFoto {
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 50%;
+                        height: 100%;
+                        border-radius: 30px 0px 100px 0px;
+                    }
+                }
+
+                .miDescripcion {
+                    padding: 15px;
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+
+                    p {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+
+        .section3 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            background-image: url(../img/fondo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 350%;
+            background-color: red;
+            margin-top: 50px;
+
+            .titulo {
+
+                margin-top: 20px;
+            }
+
+            .misProyectos {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 0px;
+
+                .card {
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: #ffff;
+                    padding: 15px;
+                    border-radius: 15px;
+                    margin: 15px;
+
+                    img {
+                        width: 100%;
+                        height: 80%;
+                        border-radius: 10px;
+                        box-shadow: 1px 1px 20px 0 #858585;
+                    }
+
+                    h4 {
+                        margin-top: 15px;
+                        font-family: sans-serif;
+                        font-weight: bold;
+                    }
+
+                    a {
+                        text-align: center;
+                        font-family: sans-serif;
+                        font-weight: bold;
+                        color: #fffafa;
+                        margin-top: 5px;
+                        border-radius: 5px;
+                        padding: 5px;
+                        text-decoration: none;
+                        background: #3D94F6;
+                        background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+                        box-shadow: 1px 1px 20px 0 #5f5d5d;
+                        text-shadow: 1px 1px 20px #000000;
+
+                        span {
+                            color: #fa0606;
+                        }
+                    }
+
+                    a:hover {
+                        background-color: #00000018;
+                        color: #0c0b0b;
+
+                        span {
+                            color: #dd820c;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .section4 {
+            width: 100%;
+            height: auto;
+
+            .titulo {
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                margin-top: 60px;
+                height: 80px;
+                width: 100%;
+
+                h2 {
+                    height: 40px;
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                    font-family: 'Grape Nuts', cursive;
+                    background-color: #2a2a2a7e;
+                }
+            }
+
+            .misCertificados {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                padding: 15px;
+
+                .card {
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: #3d3c3c;
+                    padding: 15px;
+                    border-radius: 15px;
+                    margin: 5px;
+                }
+            }
+        }
+
+        .section5 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            background-image: url(../img/fondo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 300%;
+            margin-top: 50px;
+
+
+            .titulo {
+                margin-top: 0px;
+            }
+
+            form {
+                margin: 50px auto;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    main {
+
+        .section2 {
+            height: 100%;
+
+            .sobreMi {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin: 30px auto;
+                background-color: green;
+
+                .miFoto {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    background-color: blue;
+
+                    img {
+                        width: 50%;
+                        height: 50%;
+                        border-radius: 30px 0px 100px 0px;
+                    }
+                }
+
+                .miDescripcion {
+                    padding: 15px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+
+                    p {
+                        background-color: red;
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+
+        .section3 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            background-image: url(../img/fondo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 450%;
+            background-color: rgb(7, 25, 193);
+            margin-top: 50px;
+
+            .titulo {
+
+                margin-top: 20px;
+            }
+
+            .misProyectos {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 0px;
+
+                .card {
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: #ffff;
+                    padding: 15px;
+                    border-radius: 15px;
+                    margin: 15px;
+                }
+            }
+        }
+
+        .section4 {
+            width: 100%;
+            height: auto;
+
+            .misCertificados {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                padding: 15px;
+
+                .card {
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: #3d3c3c;
+                    padding: 15px;
+                    border-radius: 15px;
+                    margin: 15px;
+                }
+            }
+        }
+
+        .section5 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            background-image: url(../img/fondo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 300%;
+            margin-top: 50px;
+
+
+            .titulo {
+                margin-top: 0px;
+            }
+
+            form {
+                margin: 50px auto;
+                width: 80%;
+            }
+        }
+    }
 }
