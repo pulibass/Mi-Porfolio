@@ -327,7 +327,6 @@ main {
             background-position: center;
             background-repeat: no-repeat;
             background-size: 350%;
-            background-color: red;
             margin-top: 50px;
 
             .titulo {
@@ -488,13 +487,11 @@ main {
                 flex-direction: column;
                 flex-wrap: wrap;
                 margin: 30px auto;
-                background-color: green;
 
                 .miFoto {
                     width: 100%;
                     display: flex;
                     justify-content: center;
-                    background-color: blue;
 
                     img {
                         width: 50%;
@@ -511,7 +508,6 @@ main {
                     align-self: center;
 
                     p {
-                        background-color: red;
                         width: 100%;
                     }
                 }
@@ -530,7 +526,6 @@ main {
             background-position: center;
             background-repeat: no-repeat;
             background-size: 450%;
-            background-color: rgb(7, 25, 193);
             margin-top: 50px;
 
             .titulo {

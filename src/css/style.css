@@ -336,7 +336,6 @@ main .section4 .misCertificados .card a:hover span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 350%;
-    background-color: red;
     margin-top: 50px;
   }
   main .section3 .titulo {
@@ -472,13 +471,11 @@ main .section4 .misCertificados .card a:hover span {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 30px auto;
-    background-color: green;
   }
   main .section2 .sobreMi .miFoto {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: blue;
   }
   main .section2 .sobreMi .miFoto img {
     width: 50%;
@@ -493,7 +490,6 @@ main .section4 .misCertificados .card a:hover span {
     align-self: center;
   }
   main .section2 .sobreMi .miDescripcion p {
-    background-color: red;
     width: 100%;
   }
   main .section3 {
@@ -507,7 +503,6 @@ main .section4 .misCertificados .card a:hover span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 450%;
-    background-color: rgb(7, 25, 193);
     margin-top: 50px;
   }
   main .section3 .titulo {
@@ -584,19 +579,20 @@ main .section4 .misCertificados .card a:hover span {
   box-sizing: border-box;
 }
 
-.section5 {
+main .section5 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 25px;
   flex-direction: column;
   align-self: flex-start;
   justify-content: center;
   background-image: url(../img/fondo.png);
-  background-position: 100%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 380%;
   background-color: #000000;
 }
-.section5 .titulo {
+main .section5 .titulo {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -604,7 +600,7 @@ main .section4 .misCertificados .card a:hover span {
   height: 80px;
   width: 100%;
 }
-.section5 .titulo h2 {
+main .section5 .titulo h2 {
   margin-top: 50px;
   height: 40px;
   width: 100%;
@@ -613,7 +609,7 @@ main .section4 .misCertificados .card a:hover span {
   font-family: "Grape Nuts", cursive;
   background-color: rgba(5, 5, 5, 0.4941176471);
 }
-.section5 form {
+main .section5 form {
   margin: 50px auto;
   width: 50%;
   padding: 15px;
@@ -629,17 +625,17 @@ main .section4 .misCertificados .card a:hover span {
   border-radius: 5px 30px 5px 30px;
   font-family: "Grape Nuts", cursive;
 }
-.section5 form .inputs-texts {
+main .section5 form .inputs-texts {
   margin: 15px auto;
   width: 40%;
   font-size: 15px;
   font-weight: bold;
 }
-.section5 form .inputs-texts input {
+main .section5 form .inputs-texts input {
   width: 100%;
   height: 30px;
 }
-.section5 form .comentario {
+main .section5 form .comentario {
   display: flex;
   flex-direction: column;
   margin: 0px auto;
@@ -647,15 +643,15 @@ main .section4 .misCertificados .card a:hover span {
   font-size: 15px;
   font-weight: bold;
 }
-.section5 form .comentario textarea {
+main .section5 form .comentario textarea {
   height: 200px;
   width: 100%;
 }
-.section5 form .button {
+main .section5 form .button {
   margin: 5px auto;
   display: flex;
 }
-.section5 form .button button {
+main .section5 form .button button {
   background-color: #edde9c;
   border: hidden;
   text-align: center;
@@ -668,34 +664,34 @@ main .section4 .misCertificados .card a:hover span {
   text-transform: uppercase;
   font-weight: bold;
 }
-.section5 form .button button:hover {
+main .section5 form .button button:hover {
   background-color: black;
   border: hidden;
   cursor: pointer;
   color: white;
   text-shadow: none;
 }
-.section5 form .contenedor-load {
+main .section5 form .contenedor-load {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   display: none;
 }
-.section5 form .contenedor-load .lds-ripple {
+main .section5 form .contenedor-load .lds-ripple {
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
 }
-.section5 form .contenedor-load .lds-ripple div {
+main .section5 form .contenedor-load .lds-ripple div {
   position: absolute;
   border: 4px solid #fff;
   opacity: 1;
   border-radius: 50%;
   animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
-.section5 form .contenedor-load .lds-ripple div div:nth-child(2) {
+main .section5 form .contenedor-load .lds-ripple div div:nth-child(2) {
   animation-delay: -0.5s;
 }
 @keyframes lds-ripple {
@@ -716,9 +712,9 @@ main .section4 .misCertificados .card a:hover span {
 }
 
 @media screen and (max-width: 768px) {
-  .section5 {
+  main .section5 {
     width: 100%;
-    height: 60vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -729,18 +725,18 @@ main .section4 .misCertificados .card a:hover span {
     background-size: 322%;
     margin-top: 50px;
   }
-  .section5 .titulo {
+  main .section5 .titulo {
     margin-top: 0px;
   }
-  .section5 form {
+  main .section5 form {
     margin: 50px auto;
     width: 90%;
   }
-  .section5 form .button {
+  main .section5 form .button {
     margin: 5px auto;
     display: flex;
   }
-  .section5 form .button button {
+  main .section5 form .button button {
     background-color: #edde9c;
     border: hidden;
     text-align: center;
@@ -754,7 +750,7 @@ main .section4 .misCertificados .card a:hover span {
     font-weight: bold;
     width: 50%;
   }
-  .section5 form .button button:hover {
+  main .section5 form .button button:hover {
     background-color: black;
     border: hidden;
     cursor: pointer;
@@ -770,7 +766,7 @@ main .section4 .misCertificados .card a:hover span {
 
 footer {
   width: 100%;
-  height: 300px;
+  height: auto;
   background-color: #4c4b4b;
   display: flex;
   flex-direction: column;
@@ -809,18 +805,45 @@ body {
 
 .section1 {
   width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
+  height: 300px;
   margin: auto;
-}
-.section1 video {
+  background-image: url("/src/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  z-index: 1;
 }
-.section1 video .video {
+.section1 h1 {
+  height: auto;
   width: 100%;
+  margin-top: 100px;
+  text-align: center;
+  color: #f8f4f4;
+  text-shadow: 15px 5px 15px rgb(253, 252, 252);
+  font-family: "Indie Flower", cursive;
+  font-size: 65px;
+  z-index: 3;
+  opacity: 1.2;
+  background-color: rgba(4, 4, 4, 0.737254902);
+  letter-spacing: 15px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .section1 {
+    width: 100%;
+    height: 300px;
+  }
+  .section1 h1 {
+    height: auto;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
