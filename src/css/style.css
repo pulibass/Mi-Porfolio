@@ -790,6 +790,7 @@ footer .iconos-frame img {
   background-color: #ffffff;
   border-radius: 100px;
   border: hidden;
+  margin: 5px;
 }
 footer .redes {
   margin-top: 50px;
