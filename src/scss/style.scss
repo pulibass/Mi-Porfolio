@@ -4,6 +4,7 @@
 @import 'main';
 @import 'contacto';
 @import 'footer';
+@import 'whatsapp';
 
 * {
     @include formatDocument
@@ -18,14 +19,13 @@ body {
     width: 100%;
     height: 300px;
     margin: auto;
-    background-image: url("/src/img/banner.jpg");
+    background-image: url("/src/img/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
 
     h1 {
         height: auto;
@@ -36,7 +36,6 @@ body {
         text-shadow: 15px 5px 15px rgb(253, 252, 252);
         font-family: 'Indie Flower', cursive;
         font-size: 65px;
-        z-index: 3;
         opacity: 1.2;
         background-color: #040404bc;
         letter-spacing: 15px;

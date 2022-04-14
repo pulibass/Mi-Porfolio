@@ -17,6 +17,12 @@ header {
 header .logo {
   width: 20%;
 }
+header #checkbtn {
+  display: none;
+}
+header label {
+  display: none;
+}
 header nav {
   width: 80%;
   display: flex;
@@ -55,6 +61,209 @@ header nav ul li a:hover {
   transform: scale(1.2);
 }
 
+@media screen and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  header .logo {
+    justify-content: space-between;
+    width: 100%;
+  }
+  header .logo img {
+    margin-left: -20px;
+  }
+  header nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -200%;
+    height: 60px;
+    flex-wrap: wrap;
+    background-color: #000;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  header nav ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+  }
+  header nav ul li a {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: row;
+  }
+  header #checkbtn {
+    display: none;
+  }
+  header .menu-hamb {
+    margin: 12px 25px 0px auto;
+    display: block;
+    z-index: 6;
+    height: 15px;
+  }
+  header .menu-hamb i {
+    color: #FFFFFF;
+  }
+  header .cruz-boton {
+    margin: 12px 25px 0px auto;
+    display: none;
+    height: 15px;
+    z-index: 6;
+  }
+  header .cruz-boton i {
+    color: #FFFFFF;
+  }
+  header #checkbtn:checked ~ nav {
+    margin-top: 60px;
+    transition: all 500ms ease-in;
+  }
+  header #checkbtn:checked ~ .cruz-boton {
+    display: block;
+    transition: all 500ms ease-in-out;
+  }
+  header #checkbtn:checked ~ .menu-hamb {
+    left: 0;
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  header .logo {
+    justify-content: space-between;
+    width: 100%;
+  }
+  header nav {
+    position: absolute;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: right;
+    margin-left: 40%;
+    height: 500px;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8509803922);
+  }
+  header nav ul {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: right;
+    margin: 15px auto;
+    flex-direction: column;
+  }
+  header nav ul li {
+    margin: 15px auto;
+    text-align: right;
+    width: 100%;
+  }
+  header nav ul li a {
+    display: flex;
+    justify-content: right;
+    font-size: 15px;
+    letter-spacing: 10px;
+    width: 100%;
+    text-align: right;
+  }
+  header nav a:hover {
+    border-radius: none;
+    transition: none;
+    color: #FFFFFF;
+    border-bottom: none;
+    cursor: pointer;
+    background: none;
+    background: -webkit-linear-gradient(none);
+    background: linear-gradient(none);
+    border-radius: none;
+    transition: none;
+    box-shadow: none;
+    transform: none;
+  }
+  header #checkbtn {
+    display: none;
+  }
+  header .menu-hamb {
+    margin: 15px 25px 0px auto;
+    display: block;
+    height: 15px;
+  }
+  header .cruz-boton {
+    margin: 15px 25px 0px auto;
+    display: none;
+    height: 15px;
+  }
+  header #checkbtn:checked ~ nav {
+    margin-top: 60px;
+    transition: all 300ms ease-in;
+  }
+  header #checkbtn:checked ~ .cruz-boton {
+    display: block;
+    transition: all 300ms ease-in-out;
+  }
+  header #checkbtn:checked ~ .menu-hamb {
+    left: 0;
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .logo {
+    width: 50%;
+    padding: 0px;
+  }
+  header .logo img {
+    margin-top: 10px;
+    margin-left: -20px;
+    width: 150px;
+    height: 50px;
+  }
+  header nav ul li a {
+    font-size: 10px;
+  }
+  header .menu-hamb {
+    margin: 20px 25px 0px auto;
+    display: block;
+    height: 15px;
+  }
+  header .menu-hamb i {
+    font-size: 25px;
+  }
+  header .cruz-boton {
+    margin: 20px 25px 0px auto;
+    display: none;
+    height: 15px;
+  }
+  header .cruz-boton i {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header nav {
+    width: 70%;
+    margin-left: 30%;
+  }
+  header nav ul li a {
+    font-size: 8px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -131,7 +340,7 @@ main .section3 {
   flex-direction: column;
   align-self: flex-start;
   justify-content: center;
-  background-image: url(../img/fondo.png);
+  background-image: url("/src/img/banner.png");
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -589,7 +798,7 @@ main .section5 {
   background-image: url(../img/fondo.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 380%;
+  background-size: 200%;
   background-color: #000000;
 }
 main .section5 .titulo {
@@ -722,7 +931,7 @@ main .section5 form .contenedor-load .lds-ripple div div:nth-child(2) {
     background-image: url(../img/fondo.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 322%;
+    background-size: 200%;
     margin-top: 50px;
   }
   main .section5 .titulo {
@@ -758,6 +967,21 @@ main .section5 form .contenedor-load .lds-ripple div div:nth-child(2) {
     text-shadow: none;
   }
 }
+@media screen and (max-width: 500px) {
+  main .section5 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-image: url(../img/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    margin-top: 50px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -779,6 +1003,7 @@ footer .iconos-frame {
   justify-content: space-around;
   align-self: center;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 footer .iconos-frame img {
   width: 100px;
@@ -789,9 +1014,77 @@ footer .iconos-frame img {
   margin: 5px;
 }
 footer .redes {
-  margin-top: 50px;
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .redes a {
+  margin: 15px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  left: 5px;
+  cursor: pointer;
+  z-index: 3;
+}
+.contenedor-whatsapp img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.contenedor-whatsapp a {
+  cursor: pointer;
+}
+.contenedor-whatsapp .texto-whatsapp {
+  background-color: rgba(0, 0, 0, 0.637);
+  margin-top: -38px;
+  margin-left: 50px;
+  width: 120px;
+  position: absolute;
+  transition: 500ms all ease;
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+  visibility: hidden;
+  background-color: #45c014;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.contenedor-whatsapp:hover > .texto-whatsapp {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  z-index: 3;
+}
+
+@media screen and (max-width: 500px) {
+  .contenedor-whatsapp img {
+    width: 35px;
+    height: 35px;
+    z-index: 3;
+  }
+  .contenedor-whatsapp .texto-whatsapp {
+    margin-top: -29px;
+    margin-left: 35px;
+    width: 80px;
+  }
+  .contenedor-whatsapp .texto-whatsapp h5 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -807,14 +1100,13 @@ body {
   width: 100%;
   height: 300px;
   margin: auto;
-  background-image: url("/src/img/banner.jpg");
+  background-image: url("/src/img/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
 }
 .section1 h1 {
   height: auto;
@@ -825,7 +1117,6 @@ body {
   text-shadow: 15px 5px 15px rgb(253, 252, 252);
   font-family: "Indie Flower", cursive;
   font-size: 65px;
-  z-index: 3;
   opacity: 1.2;
   background-color: rgba(4, 4, 4, 0.737254902);
   letter-spacing: 15px;
