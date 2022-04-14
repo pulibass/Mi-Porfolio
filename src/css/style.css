@@ -320,8 +320,8 @@ main .section2 .sobreMi .miFoto {
   justify-content: center;
 }
 main .section2 .sobreMi .miFoto img {
-  width: 80%;
-  height: 100%;
+  width: 50%;
+  height: 750px;
   border-radius: 30px 0px 100px 0px;
 }
 main .section2 .sobreMi .miDescripcion {
@@ -332,6 +332,7 @@ main .section2 .sobreMi .miDescripcion {
   align-self: center;
 }
 main .section2 .sobreMi .miDescripcion p {
+  font-size: 40px;
   width: 100%;
 }
 main .section3 {
@@ -534,6 +535,7 @@ main .section4 .misCertificados .card a:hover span {
   }
   main .section2 .sobreMi .miDescripcion p {
     width: 100%;
+    font-size: 20px;
   }
   main .section3 {
     width: 100%;
@@ -701,6 +703,7 @@ main .section4 .misCertificados .card a:hover span {
   }
   main .section2 .sobreMi .miDescripcion p {
     width: 100%;
+    font-size: 15px;
   }
   main .section3 {
     width: 100%;
@@ -1131,6 +1134,7 @@ body {
   }
   .section1 h1 {
     height: auto;
+    margin-top: 50px;
     font-size: 45px;
     display: flex;
     justify-content: center;
