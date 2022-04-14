@@ -162,6 +162,7 @@ header nav ul li a:hover {
     height: 100vh;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.8509803922);
+    padding: 15px;
   }
   header nav ul {
     width: 100%;
@@ -184,19 +185,19 @@ header nav ul li a:hover {
     width: 100%;
     text-align: right;
   }
-  header nav a:hover {
+  header nav ul li a:hover {
     border-radius: none;
     transition: none;
     color: #FFFFFF;
     border-bottom: none;
     cursor: pointer;
-    background: none;
-    background: -webkit-linear-gradient(none);
-    background: linear-gradient(none);
     border-radius: none;
     transition: none;
     box-shadow: none;
     transform: none;
+    background-color: #3c3a3a;
+    box-shadow: 1px 1px 20px 0 #FFFFFF;
+    border: hidden #161515 1px;
   }
   header #checkbtn {
     display: none;

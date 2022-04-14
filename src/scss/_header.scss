@@ -188,6 +188,7 @@ header {
             height: 100vh;
             flex-wrap: wrap;
             background-color: #000000d9;
+            padding: 15px;
 
             ul {
                 width: 100%;
@@ -212,24 +213,26 @@ header {
                         text-align: right;
                     }
 
+                    a:hover {
+                        border-radius: none;
+                        transition: none;
+                        color: #FFFFFF;
+                        border-bottom: none;
+                        cursor: pointer;
+                        border-radius: none;
+                        transition: none;
+                        box-shadow: none;
+                        transform: none;
+                        background-color: #3c3a3a;
+                        box-shadow: 1px 1px 20px 0 #FFFFFF;
+                        border: hidden #161515 1px;
+                    }
+
                 }
 
             }
 
-            a:hover {
-                border-radius: none;
-                transition: none;
-                color: #FFFFFF;
-                border-bottom: none;
-                cursor: pointer;
-                background: none;
-                background: -webkit-linear-gradient(none);
-                background: linear-gradient(none);
-                border-radius: none;
-                transition: none;
-                box-shadow: none;
-                transform: none;
-            }
+
         }
 
         #checkbtn {
